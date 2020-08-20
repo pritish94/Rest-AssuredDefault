@@ -46,9 +46,9 @@ public class DataDrivenTest_AddNewEmployees {
 		String path = System.getProperty("user.dir") + "\\src\\test\\java\\dataDrivenTesting\\testData.xlsx";
 
 		int rowCount = XLUtils.getRowCount(path, "Sheet1");
-		// System.out.println(rowCount);
+		System.out.println("rowCountStartsWithZero : " + rowCount);
 		int colCount = XLUtils.getCellCount(path, "Sheet1", 1);
-		// System.out.println(colCount);
+		System.out.println("colCountStartsWithOne : " + colCount);
 
 		String[][] data = new String[rowCount][colCount];
 
